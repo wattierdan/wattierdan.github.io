@@ -1,0 +1,257 @@
+body {
+    margin: auto;
+    background-image: url("imgs/concretewall.jpg");
+}
+
+a {
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+    text-decoration: none;
+    cursor: context-menu;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: transparent;
+    
+    font-family:monospace;
+    opacity: .9;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    font-size: 40px;
+    margin: auto;
+    letter-spacing: 2px;
+}
+
+.logo:hover {
+    cursor: pointer;
+    
+
+}
+
+.logo:active{
+    animation-name: name;
+    animation-duration: 5s;
+    position: relative;
+    animation-timing-function: ease-out;
+}
+
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+  
+.navbar li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+.navbar li a:hover,
+.navbar .menu-btn:hover {
+    background-color: gray ;
+    font-size: 50%;
+    
+}
+  
+.navbar .logo {
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+  
+  
+  
+.navbar .menu {
+    clear: both;
+    max-height: 0;
+    transition: .2s ease-out;
+}
+  
+  
+.navbar .menu-icon {
+    display: inline-block;
+    float: right;
+    padding: 30px 20px;
+    position: relative;
+    user-select: none;
+}
+  
+.navbar .menu-icon .navicon {
+    background: #ffffff;
+    display: block;
+    height: 2px;
+    position: relative;
+    
+    width: 18px;
+}
+  
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+    background: #ffffff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .7s ease-out;
+    width: 100%;
+}
+  
+.navbar .menu-icon .navicon:before {
+    top: 5px;
+}
+  
+.navbar .menu-icon .navicon:after {
+    top: -5px;
+}
+  
+.navbar .menu-btn {
+    display: none;
+}
+
+  
+.navbar .menu-btn:checked ~ .menu {
+    max-height: 240px;
+    background-color: black;
+    
+}
+
+
+  
+.navbar .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+  
+.navbar .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-225deg);
+}
+  
+.navbar .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(225deg);
+   
+}
+  
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10%;
+    font-size: 200%;
+    font-family: monospace;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: 5px 5px #000000;
+    cursor: context-menu ;
+
+}
+.about {
+    padding-top: 4%;
+    top: 50%;
+    width: 50%;
+    margin: auto;
+    color: #ffffff;
+    text-align: justify;
+    
+    
+}
+
+p {
+    background-color: rgb(34, 33, 33);
+    padding: 20px 20px;
+    opacity: 90%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 10px 10px 5px black;
+    letter-spacing: 1px;
+    
+}
+
+p:hover {
+    cursor: none;
+}
+
+
+img {
+    height: 64px;
+    padding: 30px 30px;
+    margin: 10px 10px;
+    text-shadow: 5px 5px #000000;
+}
+
+img:hover {
+    height: 100px;
+    cursor: pointer;
+}
+
+.social {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+
+.workingonit {
+    background-image: url("./imgs/koala.jpg");
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+
+@keyframes name {
+    0% {color:; left: 0%;}
+    50%{color: transparent; left: 60%;}
+    100%{color:; left:0%;}
+}
+
+
+@media (min-width: 950px) {
+
+  .navbar li {
+      float: left;
+  }
+
+  .navbar li a {
+      padding: 20px 30px;
+  }
+
+  .navbar .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+  }
+
+  .navbar .menu-icon {
+      display: none;
+  }
+
+  }
+
+  @media (max-width: 800px) {
+
+    .about {
+        width: 80%;
+    }
+
+    .header {
+        padding-top: 75px;
+    }
+
+    img {
+        padding: 5px 5px;
+    }
+ 
+  }
+  
