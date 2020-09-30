@@ -13,28 +13,30 @@ a {
 
 .navbar {
     background-color: transparent;
-    
     font-family:monospace;
     opacity: .9;
     position: fixed;
     width: 100%;
     z-index: 3;
-    font-size: 40px;
+    font-size: 50px;
     margin: auto;
     letter-spacing: 2px;
 }
 
+.logo {
+    letter-spacing: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 20px 20px;
+}
 .logo:hover {
     cursor: pointer;
+    animation-name: name;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
     
 
-}
-
-.logo:active{
-    animation-name: name;
-    animation-duration: 5s;
-    position: relative;
-    animation-timing-function: ease-out;
 }
 
 
@@ -54,7 +56,7 @@ a {
   
 .navbar li a:hover,
 .navbar .menu-btn:hover {
-    background-color: gray ;
+    cursor: pointer;
     font-size: 50%;
     
 }
@@ -211,9 +213,18 @@ img:hover {
 
 
 @keyframes name {
-    0% {color:; left: 0%;}
-    50%{color: transparent; left: 60%;}
-    100%{color:; left:0%;}
+    0%{font-family: 'Courier New', Courier, monospace;}
+    10%{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+    20%{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+    30%{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    40%{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+    50%{font-family: fantasy}
+    60%{font-family: Arial, Helvetica, sans-serif;}
+    70%{font-weight: bolder;}
+    80%{font-family: cursive;}
+    90%{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    100%{font-family: initial;}
+
 }
 
 
