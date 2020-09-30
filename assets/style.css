@@ -27,7 +27,7 @@ a {
     letter-spacing: 10px;
     font-size: 40px;
     text-transform: uppercase;
-    padding: 20px 20px;
+    padding: 80px 50px;
 }
 .logo:hover {
     cursor: pointer;
@@ -149,7 +149,7 @@ a {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    padding-top: 10%;
+    padding-top: 150px;
     font-size: 200%;
     font-family: monospace;
     letter-spacing: 10px;
@@ -160,7 +160,7 @@ a {
 }
 .about {
     padding-top: 4%;
-    top: 50%;
+    top: 70%;
     width: 50%;
     margin: auto;
     color: #ffffff;
@@ -253,13 +253,19 @@ img:hover {
   @media (max-width: 800px) {
 
     .about {
-        width: 80%;
+        width: 95%;
+        
     }
 
     .header {
-        padding-top: 75px;
+        padding-top: 150px;
     }
 
+    .logo {
+        letter-spacing: 1px;
+        margin-left: 10px;
+    }
+  
     img {
         padding: 5px 5px;
     }
