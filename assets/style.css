@@ -192,8 +192,8 @@ img {
 }
 
 img:hover {
-    height: 100px;
     cursor: pointer;
+    transform: scale(1.5);
 }
 
 .social {
