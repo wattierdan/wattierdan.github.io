@@ -303,7 +303,11 @@ a:hover {
     li {
         padding:10px 0px;     
     }
-    #text{
+    #text {
+        width: 90%;
+    }
+
+    .about {
         width: 90%;
     }
 }
