@@ -133,7 +133,8 @@ p {
     background-color: rgb(34, 33, 33);
     padding: 20px 20px;
     opacity: 90%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Major Mono Display', monospace;  
+    font-size: 16px;
     box-shadow: 10px 10px 5px black;
     letter-spacing: 1px;  
 }
@@ -170,14 +171,15 @@ p:hover {
 
 /*heading stuff*/
 h2 {
-    font-size: 28px;
+    font-size: 24px;
     padding: 10px 10px;
     text-align: left;
     color: transparent;
     background-color: transparent;
     border-top-left-radius: 1%;
     border-top-right-radius: 1%;
-    max-height: 50%;     
+    max-height: 50%;  
+    font-family: 'Major Mono Display', monospace;  
 }
 h2:hover {
     background-color: black;
@@ -243,7 +245,7 @@ h3:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.8);
     z-index: 9;
     cursor: pointer;
 }
@@ -352,7 +354,11 @@ a:hover {
         margin: 20px 5px;
         text-align: center;
         padding: 0px 0px;
-    
+    }
+    #text{
+        font-size: 16px;
+        padding: 5px 5px;
+    }
 }
 @media (max-width: 434px){
     .navbar-brand {
@@ -366,7 +372,6 @@ a:hover {
         padding-top: 20px;
     }
 }
-
 /**/
 
 
