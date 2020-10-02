@@ -144,15 +144,15 @@ p:hover {
 .projectthumb {
     height: 400px;
     border-radius: 1%;
-    margin-right: 10px;
     min-width: 370px;
     box-shadow: black 10px 10px 8px;
 }
 
 /*adds margin and text align for thumbnails*/
 .col-sm {
-    margin: 20px 0px;
+    margin: 20px 3px;
     text-align: center;
+    padding: 0px 0px;
 }
 
 /*heading stuff*/
@@ -297,37 +297,8 @@ a:hover {
 /**/
 
 
-
-
-
-
-
-/*animations*/
-@keyframes name {
-    0%{font-family: 'Iceland', cursive;
-        font-family: 'Megrim', cursive;
-        font-family: 'Wallpoet', cursive;}
-    10%{font-family: 'Battambang', cursive;}
-    20%{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
-    30%{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
-    40%{font-family: 'Libre Barcode 39', cursive;}
-    50%{font-family: 'Kdam Thmor', cursive;}
-    60%{font-family: font-family: 'Barrio', cursive;
-        font-family: 'Kdam Thmor', cursive;
-        font-family: 'Libre Barcode 39', cursive;}
-    70%{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    80%{font-family: cursive;}
-    90%{font-family: Verdana, Geneva, Tahoma, sans-serif;}
-    100%{font-family: 'Iceland', cursive;
-        font-family: 'Libre Barcode 39', cursive;
-        font-family: 'Wallpoet', cursive;}
-}
-
-/**/
-
 /*adjustments for differnt resolutions*/
 @media (max-width: 990px) {
-
     li {
         padding:10px 0px;     
     }
@@ -335,10 +306,18 @@ a:hover {
         width: 90%;
     }
 }
-
 @media (max-width: 550px) {
     .navbar-brand {
         letter-spacing: 2px;
+    }
+    img {
+        width: 75px;
+        height: 70px;
+        padding: 10px 10px;
+        margin: 0px 0px;
+    }
+    .projectthumb {
+        min-width: 300px;
     }
 }
 @media (max-width: 434px){
@@ -354,12 +333,34 @@ a:hover {
     }
 }
 
-@media (mix-width: 950px) {
-
-    .img {
-       transform: scale(.5);
-    }
-
-    
-}
 /**/
+
+
+
+
+
+
+
+
+/*animations*/
+@keyframes name {
+    0%{font-family: 'Iceland', cursive;
+        font-family: 'Megrim', cursive;
+        font-family: 'Wallpoet', cursive;}
+    10%{font-family: 'Battambang', cursive;}
+    20%{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+    30%{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    40%{font-family: 'Libre Barcode 39', cursive;}
+    50%{font-family: 'Kdam Thmor', cursive;}
+    60%{font-family:  'Barrio', cursive;
+        font-family: 'Kdam Thmor', cursive;
+        font-family: 'Libre Barcode 39', cursive;}
+    70%{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    80%{font-family: cursive;}
+    90%{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    100%{font-family: 'Iceland', cursive; font-family: 'Libre Barcode 39', cursive; font-family: 'Wallpoet', cursive;}
+}
+
+/**/
+
+
