@@ -150,7 +150,7 @@ p:hover {
 
 /*adds margin and text align for thumbnails*/
 .col-sm {
-    margin: 20px 3px;
+    margin: 20px 20px;
     text-align: center;
     padding: 0px 0px;
 }
@@ -319,6 +319,11 @@ a:hover {
     .projectthumb {
         min-width: 300px;
     }
+    .col-sm {
+        margin: 20px 5px;
+        text-align: center;
+        padding: 0px 0px;
+    
 }
 @media (max-width: 434px){
     .navbar-brand {
