@@ -4,6 +4,7 @@ body {
     background-image: url("imgs/concretewall.jpg");
     font-family: 'Megrim', cursive;
     color:rgba(255, 255, 255, 0.836);
+    max-width: 99%;
 }
 
 /*styles scroll bars*/
@@ -239,7 +240,7 @@ h3:hover {
 #overlay {
     position: fixed;
     display: none;
-    width: 100%;
+    width: 90%;
     height: 100%;
     top: 0;
     left: 0;
@@ -291,7 +292,7 @@ h3:hover {
 }
 #project-6 {
     background-image: url(./imgs/strange.jpg);
-    background-size: fill;
+    background-size: cover;
     background-position: top;
 }
 /**/
@@ -369,7 +370,18 @@ a:hover {
 @media (max-width: 320px){
     .navbar-brand {
         font-size: 25px;
-        padding-top: 20px;
+        padding-top: 10px;
+        margin-right: 0px;
+    }
+    .projectthumb {
+        max-width: 200px;
+    }
+    .navbar {
+        max-width: 320px;
+        z-index: 7;
+    }
+    button.navbar-toggler {
+        margin-top: 15px;
     }
 }
 /**/
