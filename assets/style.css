@@ -125,7 +125,7 @@ li a {
     width: 50%;
     margin: auto;
     margin-top: 10px;
-    text-align: justify;
+    text-align: center;
     
     
 }
@@ -269,7 +269,7 @@ h3:hover {
     top: 50%;
     left: 50%;
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     width: 50%;
