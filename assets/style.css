@@ -25,10 +25,8 @@ h2::-webkit-scrollbar-thumb {
 }
 #text::-webkit-scrollbar {
     background-color: transparent;
-    width: 8px;
-    
+    width: 8px; 
 }
-
 #text::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
@@ -42,18 +40,15 @@ button.navbar-toggler {
     outline: none !important;
     box-shadow: none !important;
 }
-
 span.navbar-toggler-icon:active {
     transform: scale(0.9);
 }
-
 .navbar {
     background-color: transparent;
     position: fixed;
     width: 100%;
     z-index: 7;
 }
-
 a.page_link {
     color:rgba(255, 255, 255, 0.836);
     font-size: 20px;
@@ -61,34 +56,26 @@ a.page_link {
     letter-spacing: 3px;
     text-shadow: 5px 5px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
-
 a.page_link:hover {
     color:rgba(255, 255, 255, 0.836);
     opacity: .5;
     text-decoration: none;
     background-color: black;
-    box-shadow: #000000 10px 10px 8px;
-    
-    
+    box-shadow: #000000 10px 10px 8px;   
 }
-
 a.page_link:hover::before{
     content: "|";
 }
-
 a.page_link:hover::after{
     content: "|";
 }
-
 li:hover {
     transform: scale(1.2);
 }
-
 li a {
     padding: 10px 10px;
     margin: 10px 10px;
 }
-
 .navbar-brand {
     letter-spacing: 10px;
     font-size: 40px;
@@ -97,7 +84,6 @@ li a {
     color:rgba(255, 255, 255, 0.836);
     text-shadow: 5px 5px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
-
 .navbar-brand:hover {
     cursor: pointer;
     animation-name: name;
@@ -110,7 +96,7 @@ li a {
 }
 /**/
 
-
+/*main page content*/
 .header{
     text-align: center;
     text-transform: uppercase;
@@ -120,8 +106,7 @@ li a {
     letter-spacing: 10px;
     text-shadow: 5px 5px 2px black, 0 0 1em black, 0 0 0.2em black;
     cursor: context-menu;
-    margin-bottom: 25px;
-    
+    margin-bottom: 25px;   
 }
 .about {
     padding-top: 4%;
@@ -129,15 +114,11 @@ li a {
     width: 50%;
     margin: auto;
     margin-top: 10px;
-    text-align: center;
-    
-    
 }
 p {
     background-color: rgb(34, 33, 33);
     padding: 20px 20px;
-    opacity: 90%;
-    font-family: 'Major Mono Display', monospace;  
+    opacity: 90%; 
     font-size: 16px;
     box-shadow: 10px 10px 5px black;
     letter-spacing: 1px;  
@@ -146,15 +127,7 @@ p:hover {
     cursor: none;
 }
 
-::-moz-selection { /* Code for Firefox */
-    color: transparent;
-    background: teal
-  }
-  
-  ::selection {
-    color: transparent;
-    background: teal
-  }
+
 
 
 
@@ -184,8 +157,7 @@ h2 {
     background-color: transparent;
     border-top-left-radius: 1%;
     border-top-right-radius: 1%;
-    max-height: 50%;  
-    font-family: 'Major Mono Display', monospace;  
+    max-height: 50%;    
 }
 h2:hover {
     background-color: black;
@@ -229,7 +201,7 @@ h3:hover {
 }
 .btn:active {
     transform: scale(.8);
-    outline: none !important;
+    outline: none !important; 
     box-shadow: none !important;
     border: solid white 1x !important;
 }
@@ -255,7 +227,6 @@ h3:hover {
     z-index: 9;
     cursor: pointer;
 }
-
 .overlay-title {
     color: white;
     font-size: 50px;
@@ -266,8 +237,7 @@ h3:hover {
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     z-index: 10;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px; 
 }
 #text{
     color: white;
@@ -275,12 +245,41 @@ h3:hover {
     top: 50%;
     left: 50%;
     font-size: 20px;
-    text-align: center;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
-    max-width: 70%;
-    max-height: 30%;
+    width: 900px;
+    max-height: 40%;
     overflow: auto;
+}
+/**/
+
+/*form stylezzzzz*/
+form {
+    width: 500px;
+    margin: auto;
+    background-color: rgb(34, 33, 33);
+    padding: 20px 20px;
+    opacity: 90%;
+    font-size: 16px;
+    box-shadow: 10px 10px 5px black;
+    letter-spacing: 1px; 
+}
+
+label {
+    font-size: 2em;
+    text-shadow:  5px 2px black, 0 0 1em black, 0 0 0.2em black;
+    font-weight: bold;
+}
+
+.contact-btn {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.btn-link {
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 1em;
+    
 }
 /**/
 
@@ -325,7 +324,6 @@ a:hover {
 }
 /**/
 
-
 /*adjustments for differnt resolutions*/
 @media (max-width: 990px) {
     li {
@@ -342,6 +340,10 @@ a:hover {
         opacity: .9;
         box-shadow: 10px 10px 5px black;
     }
+    form {
+        width: 400px;
+    }
+   
 }
 @media (max-width: 550px) {
     .navbar-brand {
@@ -371,6 +373,9 @@ a:hover {
         font-size: 30px;
         padding-top: 15px;
         }
+    form {
+        width: 90%;
+    }
 }
 @media (max-width: 320px){
     .navbar-brand {
@@ -391,13 +396,6 @@ a:hover {
 }
 /**/
 
-
-
-
-
-
-
-
 /*animations*/
 @keyframes name {
     0%{font-family: 'Iceland', cursive;
@@ -408,15 +406,9 @@ a:hover {
     30%{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
     40%{font-family: 'Libre Barcode 39', cursive;}
     50%{font-family: 'Kdam Thmor', cursive;}
-    60%{font-family:  'Barrio', cursive;
-        font-family: 'Kdam Thmor', cursive;
-        font-family: 'Libre Barcode 39', cursive;}
-    70%{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    80%{font-family: cursive;}
-    90%{font-family: Verdana, Geneva, Tahoma, sans-serif;}
-    100%{font-family: 'Iceland', cursive; font-family: 'Libre Barcode 39', cursive; font-family: 'Wallpoet', cursive;}
-}
-
+    60%{font-family:  'Barrio', cursive;font-family: 'Kdam Thmor', cursive;font-family: 'Libre Barcode 39', cursive;}
+    70%{font-family: 'Kdam Thmor', cursive;}
+    80%{font-family: 'Battambang', cursive;}
+    90%{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    100%{font-family: 'Iceland', cursive;} 
 /**/
-
-
