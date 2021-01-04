@@ -150,22 +150,17 @@ p:hover {
 
 /*heading stuff*/
 h2 {
-    font-size: 24px;
-    padding: 10px 10px;
+    font-size: 36px;
+    text-align: center !important;
+    padding: 20px 20px;
     text-align: left;
-    color: transparent;
-    background-color: transparent;
+    color: white;
+    background-color: black;
     border-top-left-radius: 1%;
     border-top-right-radius: 1%;
     max-height: 50%;    
 }
-h2:hover {
-    background-color: black;
-    opacity: .7;
-    color: white;
-    cursor: default ;
-    overflow: auto;
-}
+
 h3 {
     text-align: center;
     text-transform: uppercase;
@@ -213,46 +208,6 @@ h3:hover {
 }
 /**/
 
-/*overylay styling*/
-#overlay {
-    position: fixed;
-    display: none;
-    max-width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.8);
-    z-index: 9;
-    cursor: pointer;
-}
-.overlay-title {
-    color: white;
-    font-size: 50px;
-    left: 50%;
-    top: 30%;
-    position: absolute;
-    text-shadow: 5px 5px 2px black, 0 0 1em black, 0 0 0.2em black;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    z-index: 10;
-    margin-bottom: 10px; 
-}
-#text{
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 20px;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    width: 900px;
-    max-height: 40%;
-    overflow: auto;
-}
-/**/
-
 /*form stylezzzzz*/
 form {
     width: 500px;
@@ -283,23 +238,37 @@ label {
 }
 /**/
 
+/**/
+.project-buttons {
+   position: relative;
+   top: 25%;
+  
+}
+
 /*backgrounds of project tiles*/
-#project-4 {
+#password-gen {
     background-image: url(./imgs/screencapture-wattierdan-github-io-Random-Password-Generator-2020-10-17-15_32_26.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgba(128, 128, 128, 0.781);
 }
-#project-5 {
+#day_sheduler {
     background-image: url(./imgs/screenshot2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgba(128, 128, 128, 0.781);
 }
-#project-6 {
+#prow {
     background-image: url(./imgs/screenshot1.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: rgba(128, 128, 128, 0.781);
+}
+#readme-gen {
+    background-image: url(./videos/readme-gen-gif.gif);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
