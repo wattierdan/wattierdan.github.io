@@ -246,6 +246,20 @@ label {
 }
 
 /*backgrounds of project tiles*/
+#team-profile-gen {
+    background-image: url(./imgs/teamProfileGenScreenShot.png);
+    background-size: 220%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: rgba(128, 128, 128, 0.781);
+}
+#employee-tracker {
+    background-image: url(./videos/employee-tracker-gif.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(128, 128, 128, 0.781);
+}
 #password-gen {
     background-image: url(./imgs/screencapture-wattierdan-github-io-Random-Password-Generator-2020-10-17-15_32_26.png);
     background-size: cover;
