@@ -37,9 +37,5 @@ This is my portfolio page that is currently hosted on Github pages.
   Email: wattierdan@live.com
 
 
-* Is a personal website using HTML and CSS.
-* Utilizes Bootstap Framework
-* Is currently hosted on Github Pages
-* [link](https://wattierdan.github.io/) to deployed site
 
 
